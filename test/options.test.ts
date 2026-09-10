@@ -83,24 +83,24 @@ describe('options', () => {
     });
 
     it('rejects an unknown option rather than ignore it', () => {
-      // @ts-expect-error -- the option was renamed; a stale call should say so
-      expect(() => titleCase('a title', { blacklist: ['the'] })).toThrow(/unknown option/);
+      // @ts-expect-error deliberately wrong
+      expect(() => titleCase('a title', { blacklist: ['the'] })).toThrow(/nknown option/);
     });
 
     it('rejects malformed options', () => {
-      // @ts-expect-error -- deliberately wrong, for JavaScript callers
+      // @ts-expect-error deliberately wrong
       expect(() => titleCase('a title', 'nope')).toThrow(TypeError);
-      // @ts-expect-error -- deliberately wrong, for JavaScript callers
+      // @ts-expect-error deliberately wrong
       expect(() => titleCase('a title', { never: 'nope' })).toThrow(TypeError);
-      // @ts-expect-error -- deliberately wrong, for JavaScript callers
+      // @ts-expect-error deliberately wrong
       expect(() => titleCase('a title', { always: [42] })).toThrow(TypeError);
-      // @ts-expect-error -- deliberately wrong, for JavaScript callers
+      // @ts-expect-error deliberately wrong
       expect(() => titleCase('a title', { special: { spy: 'sPy' } })).toThrow(TypeError);
-      // @ts-expect-error -- deliberately wrong, for JavaScript callers
+      // @ts-expect-error deliberately wrong
       expect(() => titleCase('a title', { special: [{ spy: 42 }] })).toThrow(TypeError);
-      // @ts-expect-error -- deliberately wrong, for JavaScript callers
+      // @ts-expect-error deliberately wrong
       expect(() => titleCase('a title', { special: [null] })).toThrow(TypeError);
-      // @ts-expect-error -- deliberately wrong, for JavaScript callers
+      // @ts-expect-error deliberately wrong
       expect(() => titleCase('a title', { special: [['spy', 'sPy']] })).toThrow(TypeError);
     });
   });

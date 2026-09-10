@@ -15,7 +15,7 @@ npm run verify
 ## Project structure
 
 | Path                          | What it holds                                              |
-|-------------------------------|------------------------------------------------------------|
+| ----------------------------- | ---------------------------------------------------------- |
 | `src/title-case.ts`           | Rules, in precedence order                                 |
 | `src/casing.ts`               | Handles an individual word                                 |
 | `src/tokenize.ts`             | Atomizes the string into words and punctuation             |
