@@ -1,0 +1,20 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: monthly
+    groups:
+      dev-dependencies:
+        dependency-type: development
+    # Let a release age before we adopt it; most malicious versions are pulled
+    # within days. Security updates bypass the cooldown.
+    cooldown:
+      default-days: 7
+      semver-major-days: 14
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    cooldown:
+      default-days: 7

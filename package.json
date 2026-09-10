@@ -1,0 +1,82 @@
+{
+  "name": "grammatical-title-case",
+  "version": "0.1.0",
+  "description": "Transform a string to conform to The Chicago Manual of Style's general principles for capitalizing a title in English.",
+  "keywords": [
+    "title-case",
+    "titlecase",
+    "capitalization",
+    "capitalize",
+    "chicago-manual-of-style",
+    "cmos",
+    "headline-style",
+    "english",
+    "grammar",
+    "typography",
+    "proofreading",
+    "string"
+  ],
+  "license": "MIT",
+  "author": "Dan Doran",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Doran-and-Daughters/grammatical-title-case.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Doran-and-Daughters/grammatical-title-case/issues"
+  },
+  "homepage": "https://github.com/Doran-and-Daughters/grammatical-title-case#readme",
+  "funding": "https://github.com/sponsors/Doran-and-Daughters",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "clean": "rm -rf dist coverage",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "tsc --noEmit",
+    "verify": "npm run format:check && npm run lint && npm run typecheck && npm run test && npm run build",
+    "prepublishOnly": "npm run verify"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "@vitest/coverage-v8": "^2.1.3",
+    "eslint": "^9.13.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.3.3",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.10.0",
+    "vitest": "^2.1.3"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}

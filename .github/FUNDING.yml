@@ -1,0 +1,5 @@
+github: [OWNER]
+# Other supported keys, should you add them later:
+# thanks_dev: u/gh/OWNER
+# polar: OWNER
+# custom: ['https://example.com/donate']

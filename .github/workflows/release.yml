@@ -1,0 +1,29 @@
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: read
+  # Trusted publishing (OIDC) and the provenance attestation it generates.
+  id-token: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '22'
+          registry-url: https://registry.npmjs.org
+          cache: npm
+      # Trusted publishing needs npm 11.5.1 or later; Node ships an older one.
+      - run: npm install -g npm@latest
+      - run: npm ci --ignore-scripts
+      # `prepublishOnly` runs the full verify gate, build included. There is no
+      # npm token here by design: the registry authenticates the workflow itself.
+      - run: npm publish
