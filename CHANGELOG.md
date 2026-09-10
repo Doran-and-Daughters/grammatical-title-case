@@ -15,5 +15,5 @@ All notable changes to this project are tracked here. The format follows
 - Built-in acronym, initialism, and brand capitalizations, restored from any input case and including possessives and plurals.
 - ES module, CommonJS, and TypeScript declaration builds.
 
-[unreleased]: https://github.com/OWNER/grammatical-title-case/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/OWNER/grammatical-title-case/releases/tag/v0.1.0
+[unreleased]: https://github.com/Doran-and-Daughters/grammatical-title-case/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/Doran-and-Daughters/grammatical-title-case/releases/tag/v0.1.0

@@ -1,7 +1,7 @@
 # grammatical-title-case
 
 [![npm version](https://img.shields.io/npm/v/grammatical-title-case.svg)](https://www.npmjs.com/package/grammatical-title-case)
-[![CI](https://github.com/OWNER/grammatical-title-case/actions/workflows/ci.yml/badge.svg)](https://github.com/OWNER/grammatical-title-case/actions/workflows/ci.yml)
+[![CI](https://github.com/Doran-and-Daughters/grammatical-title-case/actions/workflows/ci.yml/badge.svg)](https://github.com/Doran-and-Daughters/grammatical-title-case/actions/workflows/ci.yml)
 [![license](https://img.shields.io/npm/l/grammatical-title-case.svg)](./LICENSE)
 [![types](https://img.shields.io/npm/types/grammatical-title-case.svg)](https://www.npmjs.com/package/grammatical-title-case)
 
