@@ -1,6 +1,6 @@
 {
   "name": "grammatical-title-case",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Transform a string to conform to The Chicago Manual of Style's general principles for capitalizing a title in English.",
   "keywords": [
     "title-case",
