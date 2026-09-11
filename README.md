@@ -1,9 +1,9 @@
 # grammatical-title-case
 
-[![npm version](https://img.shields.io/npm/v/grammatical-title-case.svg)](https://www.npmjs.com/package/grammatical-title-case)
+[![npm version](https://img.shields.io/npm/v/grammatical-title-case)](https://www.npmjs.com/package/grammatical-title-case)
 [![CI](https://github.com/Doran-and-Daughters/grammatical-title-case/actions/workflows/ci.yml/badge.svg)](https://github.com/Doran-and-Daughters/grammatical-title-case/actions/workflows/ci.yml)
-[![license](https://img.shields.io/npm/l/grammatical-title-case.svg)](./LICENSE)
-[![types](https://img.shields.io/npm/types/grammatical-title-case.svg)](https://www.npmjs.com/package/grammatical-title-case)
+[![license](https://img.shields.io/npm/l/grammatical-title-case)](./LICENSE)
+[![types](https://img.shields.io/npm/types/grammatical-title-case)](https://www.npmjs.com/package/grammatical-title-case)
 
 The `grammatical-title-case` library transforms strings to conform to _The Chicago Manual of Style_’s general principles
 for capitalizing a title in English.
