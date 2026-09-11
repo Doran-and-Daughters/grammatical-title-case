@@ -6,7 +6,13 @@ All notable changes to this project are tracked here. The format follows
 
 ## [Unreleased]
 
-## [0.1.0] - 2026-09-04
+## [0.1.1] - 2026-09-10
+
+### Changed
+
+- No changes to the library. This is the first release published through npm trusted publishing, and so the first to carry a provenance attestation; 0.1.0 was published by hand and has none.
+
+## [0.1.0] - 2026-09-10
 
 ### Added
 
@@ -15,5 +21,6 @@ All notable changes to this project are tracked here. The format follows
 - Built-in acronym, initialism, and brand capitalizations, restored from any input case and including possessives and plurals.
 - ES module, CommonJS, and TypeScript declaration builds.
 
-[unreleased]: https://github.com/Doran-and-Daughters/grammatical-title-case/compare/v0.1.0...HEAD
+[unreleased]: https://github.com/Doran-and-Daughters/grammatical-title-case/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/Doran-and-Daughters/grammatical-title-case/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/Doran-and-Daughters/grammatical-title-case/releases/tag/v0.1.0
