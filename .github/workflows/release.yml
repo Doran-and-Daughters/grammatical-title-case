@@ -24,6 +24,9 @@ jobs:
       # Trusted publishing needs npm 11.5.1 or later; Node ships an older one.
       - run: npm install -g npm@latest
       - run: npm ci --ignore-scripts
-      # `prepublishOnly` runs the full verify gate, build included. There is no
-      # npm token here by design: the registry authenticates the workflow itself.
-      - run: npm publish
+      # Staged, not direct: the trusted-publisher configuration allows only
+      # `create-staged-package`, so the version waits for a maintainer's approval
+      # (`npm stage approve`, with 2FA) before it goes live. `prepublishOnly`
+      # still runs the full verify gate, build included. There is no npm token
+      # here by design: the registry authenticates the workflow itself.
+      - run: npm stage publish
